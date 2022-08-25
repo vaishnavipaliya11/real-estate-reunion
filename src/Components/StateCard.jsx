@@ -1,12 +1,20 @@
 import "../Components/StateCard.css"
+import { useWishlist } from "../context/WishlistContext"
 const StateCard = (cardData) => {
-    const {img,type,price,rating} = cardData.cards
+    const { img, type, price, rating } = cardData.cards
+
+    const { wishlistState, wishlistDispatch } = useWishlist()
+   
     return (
         <div className="product-card">
             <div
                 className="badge"
+                onClick={() => wishlistDispatch({
+                    type:"ADD-TO-WISHLIST",
+                    payload:cardData.cards
+                })}
             >
-                 wishlist
+                wishlist
             </div>
 
             <div className="product-tumb">

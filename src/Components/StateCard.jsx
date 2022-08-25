@@ -1,29 +1,30 @@
 import "../Components/StateCard.css"
-const StateCard = () => {
+const StateCard = (cardData) => {
+    const {img,type,price,rating} = cardData.cards
     return (
-        <div class="product-card">
+        <div className="product-card">
             <div
-                class="badge"
+                className="badge"
             >
-                wishlist
+                 wishlist
             </div>
 
-            <div class="product-tumb">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX02Q1x8nsxCMe9Qc9a7fMb6ZxEScmUNAtvw&usqp=CAU" alt="houses" />
+            <div className="product-tumb">
+                <img src={img} alt="houses" />
             </div>
-            <div class="product-details">
-                <span class="product-catagory">
+            <div className="product-details">
+                <span className="product-catagory">
                     {" "}
-                    <p>catagory - type</p>
+                    <p>catagory - {type}</p>
                 </span>
 
-                <p>{room}</p>
-                <div class="product-bottom-details">
-                    <div class="product-price">
-                        <small>₹ price</small>
+                <p>room</p>
+                <div className="product-bottom-details">
+                    <div className="product-price">
+                        <small>₹ {price}</small>
                     </div>
                     <div>
-                        <small> rating ⭐</small>
+                        <small> {rating} ⭐</small>
                     </div>
                 </div>
             </div>

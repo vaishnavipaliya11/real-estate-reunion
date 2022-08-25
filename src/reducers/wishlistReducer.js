@@ -1,13 +1,19 @@
-const wishlistReducer = (state,action) =>{
+const wishlistReducer = (state, action) => {
     console.log("called");
     switch (action.type) {
         case "ADD-TO-WISHLIST":
-            console.log(action.payload);
-            return {...state, wishlist : [...state.wishlist ,{...action.payload} ]}
-            
-    
+            console.log("add", action.payload);
+            return { ...state, wishlist: [...state.wishlist, { ...action.payload }] }
+
+        case "REMOVE-FROM-WISHLIST":
+            console.log("remove", action.payload);
+            return {
+                ...state, wishlist: [...state.wishlist.filter(item => {
+                    return action._id !== item._id
+                })]
+            }
         default:
-           return state;
+            return state;
     }
 }
-export {wishlistReducer}
+export { wishlistReducer }

@@ -9,7 +9,7 @@ const wishlistReducer = (state, action) => {
             console.log("remove", action.payload);
             return {
                 ...state, wishlist: [...state.wishlist.filter(item => {
-                    return action._id !== item._id
+                    return action.payload.id !== item.id
                 })]
             }
         default:

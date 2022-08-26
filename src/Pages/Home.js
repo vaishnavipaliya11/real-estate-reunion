@@ -8,7 +8,7 @@ import { Topnav } from "../Components/Topnav";
 const Home = () => {
   const [appliedFilters, setAppliedFilters] = useState({
     maxPrice: 20000,
-    sortBy: "",
+    sorting: "",
     categories: [],
     rating: "",
     search: "",

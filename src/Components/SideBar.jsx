@@ -4,7 +4,21 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
     <div class="product-side-bar">
       <div class="filter-btn">
         <p class="bar-heading">Filters</p>
-        <button class="bar-heading clear-btn">Clear</button>
+        <button
+          class="bar-heading clear-btn"
+          onClick={() =>
+            setAppliedFilters({
+              ...appliedFilters,
+              maxPrice: 20000,
+              sortBy: "",
+              categories: [],
+              rating: "",
+              search: "",
+            })
+          }
+        >
+          Clear
+        </button>
       </div>
 
       <div class="price-range-bar">
@@ -109,6 +123,7 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
             type="radio"
             name="p-ratings"
             id="best-ratings"
+            checked={appliedFilters.rating === 4}
             onChange={(e) =>
               setAppliedFilters({ ...appliedFilters, rating: 4 })
             }
@@ -120,6 +135,7 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
             type="radio"
             name="p-ratings"
             id="better-ratings"
+            checked={appliedFilters.rating === 3}
             onChange={(e) =>
               setAppliedFilters({ ...appliedFilters, rating: 3 })
             }
@@ -131,6 +147,7 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
             type="radio"
             name="p-ratings"
             id="good-ratings"
+            checked={appliedFilters.rating === 2}
             onChange={(e) =>
               setAppliedFilters({ ...appliedFilters, rating: 2 })
             }
@@ -145,6 +162,8 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
           <input
             type="radio"
             name="sort"
+            id="low-to-high"
+            checked={appliedFilters.sorting === "LOW_TO_HIGH"}
             onChange={() =>
               setAppliedFilters({ ...appliedFilters, sorting: "LOW_TO_HIGH" })
             }
@@ -156,6 +175,7 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
             type="radio"
             name="sort"
             id="high-low"
+            checked={appliedFilters.sorting === "HIGH_TO_LOW"}
             onChange={() =>
               setAppliedFilters({ ...appliedFilters, sorting: "HIGH_TO_LOW" })
             }

@@ -1,12 +1,11 @@
 import "../Components/StateCard.css";
 import { useWishlist } from "../context/WishlistContext";
 const StateCard = (cardData) => {
-  const { img, room, price, rating,location,type } = cardData.cards;
-//   console.log("card data",cardData.cards);
+  const { img, room, price, rating, location, type } = cardData.cards;
 
   const { wishlistState, wishlistDispatch } = useWishlist();
   const { wishlist } = wishlistState;
-  console.log("wishlist",wishlist);
+
   const wishlistHandler = () => {
     console.log("called");
     if (wishlist.find((item) => item.id === cardData.cards.id)) {
@@ -57,8 +56,7 @@ const StateCard = (cardData) => {
             <small>₹ {price}</small>
           </div>
           <div>
-          <p>{location}</p>
-           
+            <p>{location}</p>
           </div>
         </div>
       </div>

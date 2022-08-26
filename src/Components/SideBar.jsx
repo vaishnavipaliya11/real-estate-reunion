@@ -48,7 +48,10 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
             name="Flats"
             checked={appliedFilters.categories.includes("flats")}
             onChange={() =>
-              setAppliedFilters({ ...appliedFilters, categories: "flats" })
+              setAppliedFilters({
+                ...appliedFilters,
+                categories: [...appliedFilters.categories, "flats"],
+              })
             }
           />
           Flats
@@ -59,7 +62,10 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
             name="Bunglow"
             checked={appliedFilters.categories.includes("bunglow")}
             onChange={() =>
-              setAppliedFilters({ ...appliedFilters, categories: "bunglow" })
+              setAppliedFilters({
+                ...appliedFilters,
+                categories: [...appliedFilters.categories, "bunglow"],
+              })
             }
           />
           Bunglow
@@ -71,7 +77,10 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
             name="Yurt"
             checked={appliedFilters.categories.includes("yurt")}
             onChange={() =>
-              setAppliedFilters({ ...appliedFilters, categories: "yurt" })
+              setAppliedFilters({
+                ...appliedFilters,
+                categories: [...appliedFilters.categories, "yurt"],
+              })
             }
           />
           Yurt
@@ -83,7 +92,10 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
             name="Bunglow"
             checked={appliedFilters.categories.includes("wooden")}
             onChange={() =>
-              setAppliedFilters({ ...appliedFilters, categories: "wooden" })
+              setAppliedFilters({
+                ...appliedFilters,
+                categories: [...appliedFilters.categories, "wooden"],
+              })
             }
           />
           Wooden

@@ -1,6 +1,6 @@
-:root{
-  --primary-color:#0284c7;
-  --gray-color:#6b7280;
+:root {
+  --primary-color: #0284c7;
+  --gray-color: #6b7280;
 }
 
 body {
@@ -27,8 +27,9 @@ body {
 .nav-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 2rem;
-    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px
+  box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
 }
 .wishlist-icon {
   font-size: 1.5rem;
@@ -50,14 +51,14 @@ body {
   color: white;
   background-color: var(--primary-color);
   border: 1px solid white;
-   position: relative;
+  position: relative;
   bottom: 1.5rem;
   right: 0.8rem;
   border-radius: 50%;
   margin: 0;
   border-color: white;
 }
-.icon-container  {
+.icon-container {
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -73,4 +74,17 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: black;
+}
+.search-bar input {
+  border: none;
+  padding: 0.3rem;
+}
+
+.search-bar input:focus {
+  border: none;
+  outline: none;
+}
+.search-bar {
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
 }

@@ -27,9 +27,17 @@ const filteredProducts = (list, appliedFilters) => {
     return [...tempList].sort((a, b) => b.price - a.price);
   }
 
-  // if (appliedFilters.category.length > 0) {
-  //   tempData = tempData.filter(product => state.category.includes(product.category));
-  // }
+  if (appliedFilters.categories.length > 0) {
+    tempList = tempList.filter((product) =>
+      appliedFilters.categories.includes(product.type)
+    );
+  }
+
+  if (appliedFilters.search) {
+    return tempList.filter((item) =>
+      item.location.toLowerCase().includes(appliedFilters.search.toLowerCase())
+    );
+  }
 
   return tempList;
 };

@@ -9,15 +9,23 @@ const Home = () => {
   const [appliedFilters, setAppliedFilters] = useState({
     maxPrice: 20000,
     sortBy: "",
-    categories: [],rating:""
+    categories: [],
+    rating: "",
+    search: "",
   });
-  const finalProducts =filteredProducts(data,appliedFilters);
+  const finalProducts = filteredProducts(data, appliedFilters);
   return (
     <div className="parent-container">
-      <Topnav/>
+      <Topnav
+        appliedFilters={appliedFilters}
+        setAppliedFilters={setAppliedFilters}
+      />
       <div className="main-container">
         <div>
-          <SideBar appliedFilters={appliedFilters } setAppliedFilters= {setAppliedFilters}/>
+          <SideBar
+            appliedFilters={appliedFilters}
+            setAppliedFilters={setAppliedFilters}
+          />
         </div>
 
         <div className="cards-container">

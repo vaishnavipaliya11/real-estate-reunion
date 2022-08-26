@@ -1,15 +1,26 @@
 import { Link } from "react-router-dom";
 import "../styles.css";
-import { BsFillSuitHeartFill } from "react-icons/bs";
+import { BsFillSuitHeartFill, BsSearch } from "react-icons/bs";
 import { FaUserAlt } from "react-icons/fa";
 import { useWishlist } from "../context/WishlistContext";
-const Topnav = () => {
+const Topnav = ({ appliedFilters, setAppliedFilters }) => {
   const { wishlistState } = useWishlist();
   const { wishlist } = wishlistState;
   return (
     <div className="nav-container">
       <div>
         <h2>E-Statery</h2>
+      </div>
+
+      <div className="search-bar">
+        <input
+          type="search"
+          placeholder="Search your products...."
+          onChange={(e) =>
+            setAppliedFilters({ ...appliedFilters, search: e.target.value })
+          }
+        />
+        <BsSearch />
       </div>
 
       <div className="icon-container">

@@ -71,7 +71,7 @@ const data = [
     type: "wooden",
     room: "3BHK",
     rating: 5,
-    location:"Nanded, Maharashtra"
+    location:"Nanded,Maharashtra"
   },
   {
     id: uuid(),

@@ -26,16 +26,17 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
       <div class="side-bar-category">
         <p class="bar-heading">Locations</p>
         <div>
-          <input type="checkbox" name="religious" />
+          <input type="checkbox" name="Nagpur" 
+          />
           Nagpur
         </div>
         <div>
-          <input type="checkbox" name="serve" />
+          <input type="checkbox" name="Mumbai" />
           Mumbai
         </div>
 
         <div>
-          <input type="checkbox" name="weaving" />
+          <input type="checkbox" name="Pune" />
           Pune
         </div>
       </div>
@@ -43,11 +44,15 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
       <div class="side-bar-category">
         <p class="bar-heading">Categories</p>
         <div>
-          <input type="checkbox" name="Flats" />
+          <input type="checkbox" name="Flats"
+          checked={appliedFilters.categories.includes("flats")}
+          onChange={() => setAppliedFilters({...appliedFilters, categories:"flats"})} />
           Flats
         </div>
         <div>
-          <input type="checkbox" name="Bunglow" />
+          <input type="checkbox" name="Bunglow"
+            checked={appliedFilters.categories.includes("bunglow")}
+          onChange={() => setAppliedFilters({...appliedFilters, categories:"bunglow"})}  />
           Bunglow
         </div>
 
@@ -55,12 +60,16 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
           <input
             type="checkbox"
             name="Yurt"
+            checked={appliedFilters.categories.includes("yurt")}
+            onChange={() => setAppliedFilters({...appliedFilters, categories:"yurt"})} 
           />
           Yurt
         </div>
 
         <div>
-          <input type="checkbox" name="Bunglow" />
+          <input type="checkbox" name="Bunglow"
+            checked={appliedFilters.categories.includes("wooden")}
+          onChange={() => setAppliedFilters({...appliedFilters,categories:"wooden"})}  />
           Wooden
         </div>
       </div>

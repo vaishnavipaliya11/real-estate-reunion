@@ -63,4 +63,14 @@ body {
   flex-direction: row;
   align-items: center;
 }
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}

@@ -74,7 +74,7 @@ const data = [
     img:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9AL_WZhzbrQdgZH2cksQL7w8P_OUp1odJgA&usqp=CAU",
     price: 9000,
-    type: "flats",
+    type: "wooden",
     room: "3BHK",
     rating: 4,
     location:"Pune, Maharashtra"
@@ -82,7 +82,7 @@ const data = [
   {
     id: uuid(),
     img:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt8mAgsueSqk7mKK6DypPozePPbL84xwvj6g&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2j5EFdb_n_nomsENBWhToyfzGeta0T7iwEg&usqp=CAU",
     price: 4000,
     type: "flats",
     room: "3BHK",
@@ -92,8 +92,8 @@ const data = [
   {
     id: uuid(),
     img:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt8mAgsueSqk7mKK6DypPozePPbL84xwvj6g&usqp=CAU",
-    price: 4000,
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKlcjm-eYNwQdtcm-Tn2yjsu67HEjkZUKAew&usqp=CAU",
+    price: 14000,
     type: "flats",
     room: "3BHK",
     rating: 3,
@@ -102,8 +102,8 @@ const data = [
   {
     id: uuid(),
     img:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt8mAgsueSqk7mKK6DypPozePPbL84xwvj6g&usqp=CAU",
-    price: 4000,
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF5oD-tipnpmyUsJrSvy0j1cc9I0cXO3EOLA&usqp=CAU",
+    price: 16000,
     type: "flats",
     room: "3BHK",
     rating: 3,
@@ -112,7 +112,7 @@ const data = [
   {
     id: uuid(),
     img:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt8mAgsueSqk7mKK6DypPozePPbL84xwvj6g&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh3H7gKPfG2WzdJHzzaztN40VPm-IONyrveA&usqp=CAU",
     price: 9000,
     type: "flats",
     room: "3BHK",
@@ -123,7 +123,7 @@ const data = [
     id: uuid(),
     img:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSvwGmgvvbe2NZEmVT2PSfed6TjarpfeRArA&usqp=CAU",
-    price: 5000,
+    price: 50000,
     type: "flats",
     room: "2BHK",
     rating: 5,

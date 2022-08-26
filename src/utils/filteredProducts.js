@@ -26,6 +26,7 @@ const filteredProducts = (list, appliedFilters) => {
     return [...tempList].sort((a, b) => b.price - a.price);
   }
 
+
   return tempList;
 };
 

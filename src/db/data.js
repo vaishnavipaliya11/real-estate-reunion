@@ -44,7 +44,7 @@ const data = [
     id: uuid(),
     img: "https://i.ytimg.com/vi/-Pf2A9ZPTn0/maxresdefault.jpg",
     price: 80000,
-    type: "wodden",
+    type: "wooden",
     room: "1BHK",
     rating: 4,
     location:"Nagpur, Maharashtra"
@@ -54,7 +54,7 @@ const data = [
     img:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmeiusSb512t3XSPwL9fA9M4sLZ94k-6tUJA&usqp=CAU",
     price: 7000,
-    type: "wodden",
+    type: "wooden",
     room: "2BHK",
     rating: 5,
     location:"Mumbai, Maharashtra"
@@ -64,7 +64,7 @@ const data = [
     img:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjcDDoLo6_TaolgQirMDa-loQV9ginSt1VqQ&usqp=CAU",
     price: 8000,
-    type: "wodden",
+    type: "wooden",
     room: "3BHK",
     rating: 5,
     location:"Nanded, Maharashtra"

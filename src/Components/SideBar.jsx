@@ -1,4 +1,3 @@
-import { filteredProducts } from "../utils/filteredProducts";
 import "./sidebar.css";
 const SideBar = ({ appliedFilters, setAppliedFilters }) => {
   return (
@@ -44,17 +43,25 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
       <div class="side-bar-category">
         <p class="bar-heading">Categories</p>
         <div>
-          <input type="checkbox" name="2BHK" />
-          2BHK
+          <input type="checkbox" name="Flats" />
+          Flats
         </div>
         <div>
-          <input type="checkbox" name="3BHK" />
-          3BHK
+          <input type="checkbox" name="Bunglow" />
+          Bunglow
         </div>
 
         <div>
-          <input type="checkbox" name=" 4BHK" />
-          4BHK
+          <input
+            type="checkbox"
+            name="Yurt"
+          />
+          Yurt
+        </div>
+
+        <div>
+          <input type="checkbox" name="Bunglow" />
+          Wooden
         </div>
       </div>
 

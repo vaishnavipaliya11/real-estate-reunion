@@ -1,10 +1,9 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles.css";
 import { BsFillSuitHeartFill } from "react-icons/bs";
 import { FaUserAlt } from "react-icons/fa";
 import { useWishlist } from "../context/WishlistContext";
 const Topnav = () => {
-  const navigate = useNavigate();
   const { wishlistState } = useWishlist();
   const { wishlist } = wishlistState;
   return (

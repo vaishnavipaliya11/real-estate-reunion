@@ -1,6 +1,6 @@
 import "../Components/StateCard.css";
 import { useWishlist } from "../context/WishlistContext";
-import {BsFillSuitHeartFill,BsSuitHeart} from "react-icons/bs"
+import { BsFillSuitHeartFill, BsSuitHeart } from "react-icons/bs";
 const StateCard = (cardData) => {
   const { img, room, price, rating, location, type } = cardData.cards;
 
@@ -21,18 +21,14 @@ const StateCard = (cardData) => {
   };
   return (
     <div className="product-card">
-      <div
-        className="badge"
-      >
-       
-
+      <div className="badge">
         {wishlist.find((item) => item.id === cardData.cards.id) ? (
           <button className="clear-btn" onClick={() => wishlistHandler()}>
-            <BsFillSuitHeartFill className="icon-wishlisted "/>
+            <BsFillSuitHeartFill className="icon-wishlisted " />
           </button>
         ) : (
           <button className="clear-btn" onClick={() => wishlistHandler()}>
-            <BsSuitHeart className="icon-wishlisted "/>
+            <BsSuitHeart className="icon-wishlisted " />
           </button>
         )}
       </div>
@@ -46,13 +42,13 @@ const StateCard = (cardData) => {
           <p>catagory - {type}</p>
         </span>
 
-        <small> {rating} ⭐</small>
+        <p>{location}</p>
         <div className="product-bottom-details">
           <div className="product-price">
             <small>₹ {price}</small>
           </div>
-          <div>
-            <p>{location}</p>
+          <div className="rating-container">
+            <small> {rating} ⭐</small> <small>{room}</small>
           </div>
         </div>
       </div>

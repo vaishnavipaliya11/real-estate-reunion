@@ -3,7 +3,7 @@ import { useWishlist } from "../context/WishlistContext"
 import {useNavigate} from "react-router-dom"
 
 const Wishlist = () => {
-    const { wishlistState, wishlistDispatch } = useWishlist()
+    const { wishlistState } = useWishlist()
     const { wishlist } = wishlistState
     const navigate = useNavigate()
     return (

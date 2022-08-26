@@ -18,7 +18,7 @@ const data = [
     type: "flats",
     room: "3BHK",
     rating: 3,
-    location:"Mumbai, Maharashtra"
+    location:"Pune, Maharashtra"
   },
   {
     id: uuid(),
@@ -90,7 +90,7 @@ const data = [
     price: 15000,
     type: "wooden",
     room: "3BHK",
-    rating: 4,
+    rating: 2,
     location:"Pune, Maharashtra"
   },
  
@@ -152,7 +152,7 @@ const data = [
     price: 14000,
     type: "flats",
     room: "3BHK",
-    rating: 3,
+    rating: 4,
     location:"Mumbai, Maharashtra"
   },
 
@@ -204,7 +204,7 @@ const data = [
     price: 8000,
     type: "wooden",
     room: "1BHK",
-    rating: 4,
+    rating: 2,
     location:"Nagpur, Maharashtra"
   },
   {
@@ -223,7 +223,7 @@ const data = [
     price: 17000,
     type: "flats",
     room: "2BHK",
-    rating: 4,
+    rating: 5,
     location:"Nagpur, Maharashtra"
   },
 
@@ -246,7 +246,7 @@ const data = [
     price: 7000,
     type: "wooden",
     room: "2BHK",
-    rating: 5,
+    rating: 2,
     location:"Mumbai, Maharashtra"
   },
 ];

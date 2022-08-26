@@ -29,13 +29,16 @@ const Home = () => {
         </div>
 
         <div className="cards-container">
-          {finalProducts.map((cardData) => {
+          {finalProducts?.map((cardData) => {
             return (
               <div>
                 <StateCard key={cardData?.id} cards={cardData} />
               </div>
             );
           })}
+          {!appliedFilters.maxPrice.length && (
+            <p className="text-center">No products found</p>
+          )}
         </div>
       </div>
     </div>

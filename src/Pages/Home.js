@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { SideBar } from "../Components/SideBar";
 import { useState } from "react";
 import { filteredProducts } from "../utils/filteredProducts";
+import { Topnav } from "../Components/Topnav";
 const Home = () => {
   const navigate = useNavigate();
   const [appliedFilters, setAppliedFilters] = useState({
@@ -15,8 +16,9 @@ const Home = () => {
   const finalProducts =filteredProducts(data,appliedFilters);
   return (
     <div className="parent-container">
-      <h1>Home</h1>
-      <button onClick={() => navigate("/wishlist")}>Wishlist</button>
+      {/* <h1>Home</h1>
+      <button onClick={() => navigate("/wishlist")}>Wishlist</button> */}
+      <Topnav/>
       <div className="main-container">
         <div>
           <SideBar appliedFilters={appliedFilters } setAppliedFilters= {setAppliedFilters}/>

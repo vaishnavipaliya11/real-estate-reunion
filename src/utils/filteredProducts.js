@@ -1,4 +1,5 @@
 const filteredProducts = (list, appliedFilters) => {
+  console.log(appliedFilters);
   let tempList = [...list];
 
   if (appliedFilters.maxPrice) {
@@ -26,6 +27,9 @@ const filteredProducts = (list, appliedFilters) => {
     return [...tempList].sort((a, b) => b.price - a.price);
   }
 
+  // if (appliedFilters.category.length > 0) {
+  //   tempData = tempData.filter(product => state.category.includes(product.category));
+  // }
 
   return tempList;
 };

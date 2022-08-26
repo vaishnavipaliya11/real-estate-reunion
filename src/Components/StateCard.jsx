@@ -1,5 +1,6 @@
 import "../Components/StateCard.css";
 import { useWishlist } from "../context/WishlistContext";
+import {BsFillSuitHeartFill,BsSuitHeart} from "react-icons/bs"
 const StateCard = (cardData) => {
   const { img, room, price, rating, location, type } = cardData.cards;
 
@@ -22,21 +23,16 @@ const StateCard = (cardData) => {
     <div className="product-card">
       <div
         className="badge"
-        // onClick={() => wishlistDispatch({
-        //     type:"ADD-TO-WISHLIST",
-        //     payload:cardData.cards
-        // })}
-        // onClick={() => wishlistHandler()}
       >
-        {/* wishlist */}
+       
 
         {wishlist.find((item) => item.id === cardData.cards.id) ? (
           <button className="clear-btn" onClick={() => wishlistHandler()}>
-            wishlisted
+            <BsFillSuitHeartFill className="icon-wishlisted "/>
           </button>
         ) : (
           <button className="clear-btn" onClick={() => wishlistHandler()}>
-            wishlist
+            <BsSuitHeart className="icon-wishlisted "/>
           </button>
         )}
       </div>

@@ -12,6 +12,7 @@ const Home = () => {
     categories: [],
     rating: "",
     search: "",
+    cities:[]
   });
   const finalProducts = filteredProducts(data, appliedFilters);
   return (

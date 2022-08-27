@@ -8,7 +8,7 @@ const data = [
     type: "bunglow",
     room: "2BHK",
     rating: 5,
-    location:"Nagpur, Maharashtra"
+    location:"Nagpur,Maharashtra"
   },
   {
     id: uuid(),
@@ -18,7 +18,7 @@ const data = [
     type: "flats",
     room: "3BHK",
     rating: 3,
-    location:"Pune, Maharashtra"
+    location:"Pune,Maharashatra"
   },
   {
     id: uuid(),
@@ -28,7 +28,7 @@ const data = [
     type: "bunglow",
     room: "2BHK",
     rating: 3,
-    location:"Mumbai, Maharashtra"
+    location:"Mumbai,Maharashtra"
   },
   {
     id: uuid(),
@@ -38,7 +38,7 @@ const data = [
     type: "yurt",
     room: "2BHK",
     rating: 3,
-    location:"Mumbai, Maharashtra"
+    location:"Mumbai,Maharashtra"
   },
   {
     id: uuid(),
@@ -48,7 +48,7 @@ const data = [
     type: "bunglow",
     room: "2BHK",
     rating: 4,
-    location:"Pune, Maharashtra"
+    location:"Pune,Maharashatra"
   },
   {
     id: uuid(),
@@ -58,7 +58,7 @@ const data = [
     type: "flats",
     room: "2BHK",
     rating: 2,
-    location:"Pune, Maharashtra"
+    location:"Pune,Maharashatra"
   },
  
 
@@ -71,7 +71,7 @@ const data = [
     type: "wooden",
     room: "3BHK",
     rating: 5,
-    location:"Nanded,Maharashtra"
+    location:"Pune,Maharashatra"
   },
   {
     id: uuid(),
@@ -81,7 +81,7 @@ const data = [
     type: "flats",
     room: "3BHK",
     rating: 3,
-    location:"Pune, Maharashtra"
+    location:"Pune,Maharashatra"
   },
   {
     id: uuid(),
@@ -91,7 +91,7 @@ const data = [
     type: "wooden",
     room: "3BHK",
     rating: 2,
-    location:"Pune, Maharashtra"
+    location:"Pune,Maharashatra"
   },
  
 
@@ -103,7 +103,7 @@ const data = [
     type: "flats",
     room: "3BHK",
     rating: 3,
-    location:"Mumbai, Maharashtra"
+    location:"Mumbai,Maharashtra"
   },
   {
     id: uuid(),
@@ -113,7 +113,7 @@ const data = [
     type: "bunglow",
     room: "2BHK",
     rating: 2,
-    location:"Nashik, Maharashtra"
+    location:"Mumbai,Maharashtra"
   },
   {
     id: uuid(),
@@ -123,7 +123,7 @@ const data = [
     type: "flats",
     room: "3BHK",
     rating: 3,
-    location:"Nagpur, Maharashtra"
+    location:"Nagpur,Maharashtra"
   },
   {
     id: uuid(),
@@ -133,7 +133,7 @@ const data = [
     type: "flats",
     room: "4BHK",
     rating: 3,
-    location:"Mumbai, Maharashtra"
+    location:"Mumbai,Maharashtra"
   },
   {
     id: uuid(),
@@ -143,7 +143,7 @@ const data = [
     type: "flats",
     room: "2BHK",
     rating: 5,
-    location:"Pune, Maharashtra"
+    location:"Pune,Maharashatra"
   },
   {
     id: uuid(),
@@ -153,7 +153,7 @@ const data = [
     type: "flats",
     room: "3BHK",
     rating: 4,
-    location:"Mumbai, Maharashtra"
+    location:"Mumbai,Maharashtra"
   },
 
  
@@ -165,7 +165,7 @@ const data = [
     type: "flats",
     room: "3BHK",
     rating: 4,
-    location:"Mumbai, Maharashtra"
+    location:"Mumbai,Maharashtra"
   },
   {
     id: uuid(),
@@ -175,7 +175,7 @@ const data = [
     type: "yurt",
     room: "3BHK",
     rating: 2,
-    location:"Mumbai, Maharashtra"
+    location:"Mumbai,Maharashtra"
   },
  
   {
@@ -186,7 +186,7 @@ const data = [
     type: "flats",
     room: "2BHK",
     rating: 4,
-    location:"Pune, Maharashtra"
+    location:"Pune,Maharashatra"
   },
   {
     id: uuid(),
@@ -196,7 +196,7 @@ const data = [
     type: "yurt",
     room: "3BHK",
     rating: 5,
-    location:"Nagpur, Maharashtra"
+    location:"Nagpur,Maharashtra"
   },
   {
     id: uuid(),
@@ -205,7 +205,7 @@ const data = [
     type: "wooden",
     room: "1BHK",
     rating: 2,
-    location:"Nagpur, Maharashtra"
+    location:"Nagpur,Maharashtra"
   },
   {
     id: uuid(),
@@ -215,7 +215,7 @@ const data = [
     type: "yurt",
     room: "2BHK",
     rating: 3,
-    location:"Nagpur, Maharashtra"
+    location:"Nagpur,Maharashtra"
   }, {
     id: uuid(),
     img:
@@ -224,7 +224,7 @@ const data = [
     type: "flats",
     room: "2BHK",
     rating: 5,
-    location:"Nagpur, Maharashtra"
+    location:"Nagpur,Maharashtra"
   },
 
   {
@@ -235,7 +235,7 @@ const data = [
     type: "bunglow",
     room: "2BHK",
     rating: 4,
-    location:"Nagpur, Maharashtra"
+    location:"Nagpur,Maharashtra"
   },
  
  
@@ -247,7 +247,7 @@ const data = [
     type: "wooden",
     room: "2BHK",
     rating: 2,
-    location:"Mumbai, Maharashtra"
+    location:"Mumbai,Maharashtra"
   },
 ];
 

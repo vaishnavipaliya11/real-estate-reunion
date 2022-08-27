@@ -39,19 +39,51 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
 
       <div class="side-bar-category">
         <p class="bar-heading">Locations</p>
-        
+
         <div>
           <input type="checkbox" name="Nagpur"
-           />
+          checked={appliedFilters.cities.includes("Nagpur,Maharashtra")} 
+             onChange={() =>{
+              appliedFilters.cities.includes("Nagpur,Maharashtra")?setAppliedFilters({
+                ...appliedFilters,
+                cities: appliedFilters.cities.filter(category=>category!=="Nagpur,Maharashtra"),
+              }):setAppliedFilters({
+                ...appliedFilters,
+                cities: [...appliedFilters.cities, "Nagpur,Maharashtra"],
+              })
+            }
+            }/>
           Nagpur
         </div>
         <div>
-          <input type="checkbox" name="Mumbai" />
+          <input type="checkbox" name="Mumbai"
+          checked={appliedFilters.cities.includes("Mumbai,Maharashtra")} 
+            onChange={() =>{
+              appliedFilters.cities.includes("Mumbai,Maharashtra")?setAppliedFilters({
+                ...appliedFilters,
+                cities: appliedFilters.cities.filter(category=>category!=="Mumbai,Maharashtra"),
+              }):setAppliedFilters({
+                ...appliedFilters,
+                cities: [...appliedFilters.cities, "Mumbai,Maharashtra"],
+              })
+            }
+            }/>
           Mumbai
         </div>
 
         <div>
-          <input type="checkbox" name="Pune" />
+          <input type="checkbox" name="Pune"
+          checked={appliedFilters.cities.includes("Pune,Maharashatra")} 
+          onChange={() =>{
+            appliedFilters.cities.includes("Pune,Maharashatra")?setAppliedFilters({
+              ...appliedFilters,
+              cities: appliedFilters.cities.filter(category=>category!=="Pune,Maharashatra"),
+            }):setAppliedFilters({
+              ...appliedFilters,
+              cities: [...appliedFilters.cities, "Pune,Maharashatra"],
+            })
+          }
+          } />
           Pune
         </div>
       </div>

@@ -36,7 +36,7 @@ const Home = () => {
               </div>
             );
           })}
-          {!appliedFilters.maxPrice.length && (
+          {!finalProducts.length && (
             <p className="text-center">No products found</p>
           )}
         </div>

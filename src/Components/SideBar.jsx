@@ -10,7 +10,7 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
             setAppliedFilters({
               ...appliedFilters,
               maxPrice: 20000,
-              sortBy: "",
+              sorting: "",
               categories: [],
               rating: "",
               search: "",
@@ -39,8 +39,10 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
 
       <div class="side-bar-category">
         <p class="bar-heading">Locations</p>
+        
         <div>
-          <input type="checkbox" name="Nagpur" />
+          <input type="checkbox" name="Nagpur"
+           />
           Nagpur
         </div>
         <div>
@@ -61,11 +63,15 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
             type="checkbox"
             name="Flats"
             checked={appliedFilters.categories.includes("flats")}
-            onChange={() =>
-              setAppliedFilters({
+            onChange={() =>{
+              appliedFilters.categories.includes("flats")?setAppliedFilters({
+                ...appliedFilters,
+                categories: appliedFilters.categories.filter(category=>category!=="flats"),
+              }):setAppliedFilters({
                 ...appliedFilters,
                 categories: [...appliedFilters.categories, "flats"],
               })
+            }
             }
           />
           Flats
@@ -75,11 +81,15 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
             type="checkbox"
             name="Bunglow"
             checked={appliedFilters.categories.includes("bunglow")}
-            onChange={() =>
-              setAppliedFilters({
+            onChange={() =>{
+              appliedFilters.categories.includes("bunglow")?setAppliedFilters({
+                ...appliedFilters,
+                categories: appliedFilters.categories.filter(category=>category!=="bunglow"),
+              }):setAppliedFilters({
                 ...appliedFilters,
                 categories: [...appliedFilters.categories, "bunglow"],
               })
+            }
             }
           />
           Bunglow
@@ -90,11 +100,15 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
             type="checkbox"
             name="Yurt"
             checked={appliedFilters.categories.includes("yurt")}
-            onChange={() =>
-              setAppliedFilters({
+            onChange={() =>{
+              appliedFilters.categories.includes("yurt")?setAppliedFilters({
+                ...appliedFilters,
+                categories: appliedFilters.categories.filter(category=>category!=="yurt"),
+              }):setAppliedFilters({
                 ...appliedFilters,
                 categories: [...appliedFilters.categories, "yurt"],
               })
+            }
             }
           />
           Yurt
@@ -103,13 +117,17 @@ const SideBar = ({ appliedFilters, setAppliedFilters }) => {
         <div>
           <input
             type="checkbox"
-            name="Bunglow"
+            name="Wooden"
             checked={appliedFilters.categories.includes("wooden")}
-            onChange={() =>
-              setAppliedFilters({
+            onChange={() =>{
+              appliedFilters.categories.includes("wooden")?setAppliedFilters({
+                ...appliedFilters,
+                categories: appliedFilters.categories.filter(category=>category!=="wooden"),
+              }):setAppliedFilters({
                 ...appliedFilters,
                 categories: [...appliedFilters.categories, "wooden"],
               })
+            }
             }
           />
           Wooden
